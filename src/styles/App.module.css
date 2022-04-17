@@ -1,0 +1,163 @@
+.container{
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 20px;
+padding-right: 20px;
+  color: white;
+}
+
+.card{
+  max-width: 600px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+.joinContainer{
+  display: flex;
+  gap: 15px;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.joinContainer > h1{
+  color: var(--cyan);
+  font-size: 1.5rem;
+}
+
+.joinContainer > .description{
+  color: var(--bright-yellow);
+  font-size: 1rem;
+  font-weight: 600;
+  font-size: 100;
+}
+
+.joinContainer > p{
+  font-size: 1rem;
+  color: var(--grayish-blue);
+}
+
+.info{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.subscription{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--grayish-blue);
+}
+.subscription > h1{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.subscription > div > span {
+  font-size: 1.5rem;
+  color: white;
+}
+.subscription > div {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color:var(--light-gray);
+}
+
+.subscription > p{
+  font-size:1rem;
+}
+
+.subscription > button{
+  cursor: pointer;
+  margin-top: 10px;
+  max-width: 300px;
+  height: 50px;
+  background: var(--bright-yellow);
+  border: 0;
+  font-weight:600 ;
+  color: white;
+  border-radius: 5px;
+  font-size: .9rem;
+  transition: .5s;
+}
+
+.subscription > button:hover{
+  transform: scale(1.02);
+}
+
+.about{
+  padding: 30px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+  background: var(--cyan);
+}
+
+.about > h1{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.about > ul {
+  display: flex;
+  font-size: .9rem;
+  flex-direction: column;
+  gap: 2px;
+  font-weight: 300;
+  list-style: none;
+}
+
+
+.attribution{
+  color: black;
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  width: fit-content;
+  font-size: 1.2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 700;
+}
+.attribution *{
+  font-weight: 900 !important;
+  margin: auto 5px;
+}
+
+.attribution a{
+  color: #00aa5b !important;
+  font-weight:900;
+  text-decoration: none;
+}
+
+
+@media (max-width:768px) {
+ .info{
+   display: flex;
+   flex-direction: column;
+ }
+
+
+ .joinContainer > p{
+   line-height: 30px;
+ }
+
+ .about > ul{
+   line-height: 25px;
+ }
+
+
+ .attribution{
+   display: none;
+   visibility: collapse;
+ }
+}
